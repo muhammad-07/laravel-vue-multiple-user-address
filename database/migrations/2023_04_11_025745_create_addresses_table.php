@@ -22,8 +22,7 @@ return new class extends Migration
             $table->string('state');
             $table->enum('type', ['home', 'office']);
             $table->unsignedBigInteger('user_id');
-            $table->timestamps();
-
+          
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')

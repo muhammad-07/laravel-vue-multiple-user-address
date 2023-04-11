@@ -1,4 +1,6 @@
-Don't read me.
+Set your env and run: 
+1) php artisan migrate:fresh --seed
+2) npm run dev
  
 
 ## Copyright and License

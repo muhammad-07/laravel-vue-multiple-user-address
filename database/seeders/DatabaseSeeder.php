@@ -27,8 +27,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Getting books from API and SEED
-        $this->call(BookSeeder::class);
-        // \App\Models\User::factory(10)->create();
+
+        \App\Models\User::factory(50)->hasAddresses(2)
+        ->create();
 
 
     }
